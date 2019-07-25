@@ -33,18 +33,10 @@ console.log("klkmlkmfdslkmlkmfdslkmfd");
 
 
 //refresh tokens
-router.get("/refresh", (req, res) => JWT.refreshToken(req, res));
 
-//testar tokens
-router.get("/token", (req, res) => JWT.validateToken(res, req, GET.getAllUsers));
-
-//login
-router.post("/login", (req, res) => POST.login(req, res));                                              //working
-
-//passwords
-router.get("/password", (req, res)=> GET.getPasswordKeys(req, res))
-router.post("/password", (req, res)=>POST.requestNewPasswordChangeKey(req, res));                       //working
-router.put("/password/:key", (req, res)=>PUT.updatePassword(req, res));                                 //working
+//cause problems 
+//more problems
+                                 //working
 
 //user
 router.get("/users/:id", (req, res) =>  GET.getUser(req, res));                                         //working
