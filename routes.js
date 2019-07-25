@@ -25,6 +25,12 @@ let corsOptions = {
 router.use(cors(corsOptions));
 
 //rotas
+//dofmsomfsd
+
+//sodfmsodmfsdf
+
+console.log("klkmlkmfdslkmlkmfdslkmfd");
+
 
 //refresh tokens
 router.get("/refresh", (req, res) => JWT.refreshToken(req, res));
